@@ -1,0 +1,7 @@
+C:\Users\Андрей\Desktop\iridiumtst\UnitTestIridium\bin\Debug\UnitTestIridium.dll
+C:\Users\Андрей\Desktop\iridiumtst\UnitTestIridium\bin\Debug\UnitTestIridium.pdb
+C:\Users\Андрей\Desktop\iridiumtst\UnitTestIridium\obj\Debug\UnitTestIridium.csprojResolveAssemblyReference.cache
+C:\Users\Андрей\Desktop\iridiumtst\UnitTestIridium\obj\Debug\UnitTestIridium.dll
+C:\Users\Андрей\Desktop\iridiumtst\UnitTestIridium\obj\Debug\UnitTestIridium.pdb
+C:\Users\Андрей\Desktop\iridiumtst\UnitTestIridium\bin\Debug\IridiumCode.dll
+C:\Users\Андрей\Desktop\iridiumtst\UnitTestIridium\bin\Debug\IridiumCode.pdb

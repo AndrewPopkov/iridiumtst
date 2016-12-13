@@ -1,0 +1,4 @@
+C:\Users\Андрей\Desktop\iridiumtst\IridiumCode\bin\Debug\IridiumCode.dll
+C:\Users\Андрей\Desktop\iridiumtst\IridiumCode\bin\Debug\IridiumCode.pdb
+C:\Users\Андрей\Desktop\iridiumtst\IridiumCode\obj\Debug\IridiumCode.dll
+C:\Users\Андрей\Desktop\iridiumtst\IridiumCode\obj\Debug\IridiumCode.pdb
