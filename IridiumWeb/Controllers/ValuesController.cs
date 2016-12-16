@@ -1,4 +1,5 @@
-﻿using System;
+﻿using IridiumWeb.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -7,39 +8,50 @@ using System.Web.Http;
 
 namespace IridiumWeb.Controllers
 {
+
     public class ValuesController : ApiController
     {
-        Stack<string> obj = new Stack<string>();
-
-        // GET api/values
-        [HttpGet]
-        public string Peek()
+        ValueContext db;
+        ValuesController()
         {
-            return obj.Peek();
+             db = new ValueContext();
         }
 
         // GET api/values
         [HttpGet]
-        public int Size()
+        public Value Peek()
         {
-            return obj.Count;
+            Value value = db.Values.OrderByDescending(val => val.Id).FirstOrDefault();
+            return value;
         }
 
-        // POST api/values/str
+        // POST api/values/
         [HttpPost]
-        public void Push([FromBody]string value)
+        public void Push([FromBody]Value value)
         {
-            obj.Push(value);
+            db.Values.Add(value);
+            db.SaveChanges();
         }
 
         // DELETE api/values
         [HttpDelete]
-        public void Pop()
+        public Value Pop()
         {
+            Value value = db.Values.OrderByDescending(val => val.Id).FirstOrDefault();
+            if (value != null)
+            {
+                db.Values.Remove(value);
+                db.SaveChanges();
+            }
+            return value;
         }
 
         protected override void Dispose(bool disposing)
         {
+            if (disposing)
+            {
+                db.Dispose();
+            }
             base.Dispose(disposing);
         }
     }
